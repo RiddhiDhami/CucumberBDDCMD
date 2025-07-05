@@ -14,6 +14,7 @@ public class login {
 
     @Given("user is on login page")
     public void user_is_on_login_page(){
+        System.out.println("user is on login page");
 
     }
     @When("user enters valid username and password")
