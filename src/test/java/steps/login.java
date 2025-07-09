@@ -5,8 +5,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.logging.Logger;
+
 
 public class login {
+    Logger log= Logger.getLogger("login");
     @Given("user calculated {int}+{int}")
     public void userCalculated(int arg0, int arg1) {
         System.out.println(arg0+arg1);
@@ -14,6 +17,7 @@ public class login {
 
     @Given("user is on login page")
     public void user_is_on_login_page(){
+        log.info("This is my log message");
         System.out.println("user is on login page");
 
     }
